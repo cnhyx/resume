@@ -1,178 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>黄钰鑫-web开发</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>个人信息.md</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
+#write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write ol, #write p, #write ul { position: relative; }
+#write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write, pre { white-space: pre-wrap; }
+.CodeMirror, .md-fences, table { text-align: left; }
+.md-reset, a:active, a:hover { outline: 0px; }
+.md-reset, .md-toc-item a { text-decoration: none; }
+.MathJax_SVG, .md-reset { float: none; direction: ltr; }
+:root { --bg-color:#ffffff; --text-color:#333333; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+.in-text-selection, ::selection { background: rgb(181, 214, 252); text-shadow: none; }
+#write { margin: 0px auto; word-break: normal; word-wrap: break-word; padding-bottom: 70px; overflow-x: visible; }
+.first-line-indent #write p .md-line { text-indent: 0px; }
+.first-line-indent #write li, .first-line-indent #write p, .first-line-indent #write p .md-line:first-child { text-indent: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write > blockquote:first-child, #write > div:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > table:first-child, #write > ul:first-child { margin-top: 30px; }
+#write li > table:first-child { margin-top: -20px; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0px; -webkit-margin-after: 0px; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+#write > figure:first-child { margin-top: 16px; }
+figure { overflow-x: auto; margin: -8px 0px 0px -8px; max-width: calc(100% + 16px); padding: 8px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; }
+.CodeMirror-line, .md-fences { break-inside: avoid; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; margin-right: 4px; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+.md-fences { font-size: 0.9rem; display: block; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences .CodeMirror.CodeMirror-wrap { top: -1.6em; margin-bottom: -1.6em; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; vertical-align: top; background: 0px 0px; text-shadow: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; }
+.md-toc-inner, a img, img a { cursor: pointer; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: nowrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; orphans: 2; }
+  p { orphans: 4; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > img:only-child { display: block; margin: auto; }
+.md-line > .md-image:only-child, p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+.mathjax-block:not(:empty)::after, .md-toc-content::after, .md-toc::after { display: none; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.MathJax_SVG, .mathjax-block .MathJax_SVG_Display { text-indent: 0px; max-width: none; max-height: none; min-height: 0px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, tt { font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0px; position: relative; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; min-width: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg, [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: normal; src: local("Open Sans Regular"), url("./github/400.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: normal; src: local("Open Sans Italic"), url("./github/400i.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: bold; src: local("Open Sans Bold"), url("./github/700.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border-width: 0px 0px 1px; border-style: none none solid; border-top-color: initial; border-right-color: initial; border-left-color: initial; border-image: initial; overflow: hidden; box-sizing: content-box; border-bottom-color: rgb(221, 221, 221); }
+body > h2:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(221, 221, 221); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(204, 204, 204); margin: 0px; padding: 0px; }
+table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(204, 204, 204); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
+.md-fences, code, tt { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media screen and (min-width: 914px) {
+}
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+#md-notification::before { top: 10px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+
+
+
+
+
+ .typora-export p {white-space: normal;} 
+</style>
 </head>
-
-<body style="font-family:Microsoft YaHei">
-    <div class="container" id="cv">
-        <div class="side">
-            <div class="me">
-                <div class="portrait"></div>
-                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
-                    <h3>请输入图片URL地址：</h3>
-                    <br/>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div>
-                <h1 id="username" >黄钰鑫</h1>
-                <h4 id="persona-tag" >PHP / Web </h4>
-            </div>
-            <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label">姓名</label><span class="label-value">黄钰鑫</span></li>
-                    <li>
-				
-                        <label class="left-label">性别</label><span class="label-value">男</span></li>
-					<li>
-                        <label class="left-label">学历</label><span class="label-value">专科</span></li>     
-                    <li>
-                        <label class="left-label">职称</label><span class="label-value">中级网络工程师</span></li>
-                </ul>
-            </div>
-            <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title" contenteditable="true">联系方式</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">18500179540</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">cnhyxn@163.com<br></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                    
-                </ul>
-            </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title" contenteditable="true">技能点</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="progress-list">
-                    <li>
-                        <label class="left-label" contenteditable="true">PHP</label>
-                        <progress value="60.03125" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">HTML/CSS</label>
-                        <progress value="53.125" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">Javascript</label>
-                        <progress value="53.90625" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-					  <li>
-                        <label class="left-label" contenteditable="true">MySQL</label>
-                        <progress value="56.90625" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <li>
-                        <label class="left-label" contenteditable="true">Sports</label>
-                        <progress value="100" max="100"></progress>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                </ul>
-            </div>
-            <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title" contenteditable="true">技术栈</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="stack-list">
-                    <li>
-                        <label class="left-label" contenteditable="true">前端</label><span class="label-value" contenteditable="true"><span style="display: inline !important;">HTML、CSS、javaScript、jQuery、Ajax</span></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                    <li>
-                        <label class="left-label" contenteditable="true">后端</label><span class="label-value" contenteditable="true">PHP</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                    <li>
-                        <label class="left-label" contenteditable="true">数据库</label><span class="label-value" contenteditable="true">MySQL</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                <li>
-                        <label class="left-label" contenteditable="true">框架</label><span class="label-value" contenteditable="true"><span style="display: inline !important;">Laravel、ThinkPHP</span></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li><li>
-                        <label class="left-label" contenteditable="true">缓存</label><span class="label-value" contenteditable="true"><span style="display: inline !important;">掌握一定的Memcache、Redis</span></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li><li>
-                        <label class="left-label" contenteditable="true">Linux</label><span class="label-value" contenteditable="true"><span style="display: inline !important; background-color: rgb(245, 245, 245);">了解Linux的常用操作</span></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li><li>
-                        
-            </div>
-
-            
-            
-        </div>
-        <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title" contenteditable="true">教育经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3 contenteditable="true">郑州信息工程职业学院&nbsp;- 网络工程专业 2014.9-2017.6</h3>
-                        <h3 contenteditable="true">郑州大学（自考本） 2016.5至今</h3>
-			    
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                </ul>
-            </div>
-            <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title" contenteditable="true">工作经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3 contenteditable="true"><div><span style="line-height: 1.5; display: inline !important;">郑州悦邦网络技术有限公司－实习生-岗位：技术支持</span><br></div></h3>
-                        <span style="display: inline !important;">1.负责根据用户的需求，对现有网络调整及处理简单网络故障。</span><div><span style="display: inline !important;"><span style="line-height: normal; display: inline !important;">2.负责公司项目的防火墙、网闸等安全设备的安装调试和售后服务。</span><br>
-					<span style="display: inline !important;">
-						3.实习期间，对待工作积极主动，有条理性。工作前一天确定工作计划，每天核对计划，并确定工作的完成情况。具有忧患意识，每次都会做备份信息，并做好存档。</span>
-                        	<br></span></div>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    <h3 contenteditable="true"><div><span style="line-height: 1.5; display: inline !important;">北京坤渔科技有限公司-岗位：PHP开发工程师</span><br></div></h3>
-                     <span style="display: inline !important;">1.负责网站数据库、栏目、程序模块的设计与开发，编写后台用户操作文档。</span><br>
-                        <span style="display: inline !important;">2.负责维护线上产品，在现有的网站上进行二次开发。</span><br>
-
-
-
-                </ul>
-            </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title" contenteditable="true">个人项目</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3 contenteditable="true">项目类型：博客 &nbsp;http://39.107.85.213</h3>
-                        <div style="line-height: normal;"><b><span style="display: inline !important;">项目描述</span><span style="display: inline !important;">：</span></b><br></div><div style="line-height: normal;">&nbsp; &nbsp;&nbsp; &nbsp;该项目主要围绕首页、用户管理、用户设置、创作中心、用户博客这五个方面来设计。其中首
-      页模块实现了博客推荐、博客分类展示、今日推荐等功能。用户管理模块实现了登录、注册、忘记密码等功能。用户设置模块实现了用户个人中心、个人关系、个人收藏、账号设置等功能。创作中心模块实现了发表博客、文章管理、分类管理、博客设置等功能。用户博客模块实现了博客分类展示（月份、个人分类、原创等）、用户信息展示（粉丝数量、访问量、获赞数等）、文章详情（评论、收藏、点赞等）。
-</div><div style="line-height: normal;"><b>使用技术：</b></div><div style="line-height: normal;">&nbsp; &nbsp;&nbsp; &nbsp;项目使用Laravel5.5编写，实现了从用户注册到用户管理博客的所有流程。其中，首页使用
-新闻API接口填充的数据，用Ajax+DOM实现首页博客的动态加载。博客文章的点赞数、短信验证码以及找回密码的唯一ID，使用Redis进行存储的。用户博客文章、原创数、个人分类等一些公共的数据使用Memcache作缓存。
-</div><div style="line-height: normal;"><b>项目心得：</b></div><div style="line-height: normal;">&nbsp; &nbsp;&nbsp; &nbsp;耐得住寂寞。</div>
-                        
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                    <li>
-                        <h3 contenteditable="true">项目类型：民谣&nbsp;http://39.106.18.138</h3>
-                        <div style="line-height: normal;"><b><span style="display: inline !important;">项目描述</span><span style="display: inline !important;">：</span></b><br></div><div style="line-height: normal;">&nbsp; &nbsp;&nbsp; &nbsp;简简单单的24首不简单的民谣。</div>
-                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
-                    
-                </ul>
-            </div>
-            
-  <!--           <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title" contenteditable="true">自我评价</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
-                <hr>
-                <p contenteditable="true">&nbsp; &nbsp; &nbsp; &nbsp;<div>&nbsp;<br><div><br><div><div><br></div></div></div></div></p>
-            </div> -->
-        </div>
-    </div>
-
-
-
-<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal" tabindex="-1">
-                    <h3 contenteditable="true">请输入图片URL地址：</h3>
-                    <br>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="weixin-modal" tabindex="-1">
-                <h3 contenteditable="true">请输入图片URL地址：</h3>
-                <br>
-                <input type="text" id="weixin-url">
-                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-            </div></div></body></html>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>个人信息</h1><ul><li>基本信息：黄钰鑫/男/1995</li><li>学历：大专/郑州信息工程职业学院/网络工程</li><li>工作经验：2年</li><li>期望职位：PHP开发工程师</li><li>个人博客：<a href='http://blog.csdn.net/huangyuxin_'>blog.csdn.net/huangyuxin_</a></li></ul><h1><a name='header-n18' class='md-header-anchor '></a>联系方式</h1><ul><li>手机：18500179540</li><li>Email：<a href='mailto:cnhyxn@163.com' target='_blank' >cnhyxn@163.com</a></li></ul><h1><a name='header-n26' class='md-header-anchor '></a>技能清单</h1><ul><li>熟练使用php编程，遵守编码规范</li><li>熟练使用MySQL，能够熟练编写SQL语句和使用数据库管理工具Navicat</li><li>熟悉HTML，CSS，JavaScript，jQuery，Ajax</li><li>熟悉Laravel和ThinkPHP框架，能够使用框架进行项目开发，熟悉项目的基本流程</li><li>熟悉Git的版本控制的基本使用</li><li>熟悉Linux的常用命令操作，能够独立搭建LAMP环境、LNMP环境</li><li>熟悉Dedecms等CMS二次开发程序</li><li>掌握一定的Memcache和Redis缓存技术</li><li>了解seo相关知识</li></ul><h1><a name='header-n55' class='md-header-anchor '></a>工作经历</h1><h3><a name='header-n56' class='md-header-anchor '></a>华唐云烁科技有限公司（ 2017年12月 ~ 2018年7月）</h3><ul><li>维护公司现有网站，并在此基础上进行二次开发。</li><li>用CMS程序快速建站，并对网站做seo优化。</li></ul><h3><a name='header-n64' class='md-header-anchor '></a>郑州悦邦网络技术有限公司（ 2016年11月 ~ 2017年10月）</h3><ul><li>负责根据用户的需求，对现有网络调整及处理简单网络故障。</li><li>负责公司项目的防火墙、网闸等安全设备的安装调试和售后服务以及网络配置备份。</li></ul><h1><a name='header-n72' class='md-header-anchor '></a>项目经验</h1><ul><li><strong>项目类型</strong>：博客</li><li><strong>项目描述</strong>：项目主要围绕首页、用户管理、用户设置、创作中心、用户博客这五个方面来设计。其中首页模块实现了博客推荐、博客分类展示、今日推荐等功能。用户管理模块实现了登录、注册、忘记密码等功能。用户设置模块实现了用户个人中心、个人关系、个人收藏、账号设置等功能。创作中心模块实现了发表博客、文章管理、分类管理、博客设置等功能。用户博客模块实现了博客分类展示（月份、个人分类、原创等）、用户信息展示（粉丝数量、访问量、获赞数等）、文章详情（评论、收藏、点赞等）。</li><li><strong>使用技术</strong>：项目使用Laravel5.5编写，实现了从用户注册到用户管理博客的所有流程。其中，首页使用新闻API接口填充的数据，用Ajax+DOM实现首页博客的动态加载。博客文章的点赞数、短信验证码以及找回密码的唯一ID，使用Redis进行存储的。用户博客文章、原创数、个人分类等一些公共的数据使用缓存。</li></ul><p>&nbsp;</p></div>
+</body>
+</html>
